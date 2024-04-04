@@ -16,6 +16,16 @@ def get_ip_info():
         longitude = data['longitude']
         isp = data['org']
         asn = data['asn']
+
+        # Affichage des informations
+        print(f"Adresse IP: {ip_address}")
+        print(f"Version IP: {version}")
+        print(f"Devise: {currency}")
+        print(f"Pays: {country}")
+        print(f"Ville: {city}")
+        print(f"Location: {latitude}, {longitude}")
+        print(f"Fournisseur: {isp}")
+        print(f"ASN: {asn}")
         
         print(data)
     except Exception as e:
