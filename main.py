@@ -18,14 +18,8 @@ def get_ip_info():
         asn = data['asn']
 
         # Affichage des informations
-        print(f"Adresse IP: {ip_address}")
-        print(f"Version IP: {version}")
-        print(f"Devise: {currency}")
-        print(f"Pays: {country}")
-        print(f"Ville: {city}")
-        print(f"Location: {latitude}, {longitude}")
-        print(f"Fournisseur: {isp}")
-        print(f"ASN: {asn}")
+        result = f"Adresse IP : {ip_address}\nVersion IP : {version}\nDevise : {currency}\nPays : {country}\nVille : {city}\nLatitude : {latitude}\nLongitude : {longitude}\nFournisseur : {isp}\nASN : {asn}"
+        print(result)
         
         print(data)
     except Exception as e:
